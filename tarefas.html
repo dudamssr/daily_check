@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1>Daily Check</h1>
+  <div>
+    <a href="home.html">Home</a>
+    <a href="clima.html">Temperatura</a>
+    <a href="tarefas.html">Tarefas</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Nova tarefa</h2>
+
+  <input id="nome" placeholder="Nome da tarefa">
+  <input id="inicio" type="date">
+  <input id="fim" type="date">
+
+  <button onclick="abrirModal()">Adicionar</button>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3>Descrição</h3>
+    <textarea id="descricao"></textarea>
+    <button onclick="salvar()">Salvar</button>
+  </div>
+</div>
+
+<script src="tarefas.js"></script>
+</body>
+</html>
